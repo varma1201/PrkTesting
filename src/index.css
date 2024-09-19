@@ -1,0 +1,179 @@
+@font-face {
+  font-family: ClashDisplayBold;
+  src: url(../fonts/ClashDisplay/ClashDisplay-Bold.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: ClashDisplayExtralight;
+  src: url(../fonts//ClashDisplay/ClashDisplay-Extralight.ttf)
+    format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: ClashDisplayLight;
+  src: url(../fonts/ClashDisplay/ClashDisplay-Light.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: ClashDisplayMedium;
+  src: url(../fonts/ClashDisplay/ClashDisplay-Medium.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: ClashDisplayRegular;
+  src: url(../fonts/ClashDisplay/ClashDisplay-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: ClashDisplaySemibold;
+  src: url(../fonts/ClashDisplay/ClashDisplay-Semibold.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: ClashDisplayVariable;
+  src: url(../fonts/ClashDisplay/ClashDisplay-Variable.ttf) format("truetype");
+  font-display: swap;
+}
+
+/* Raleway fonts */
+
+@font-face {
+  font-family: RalewayBlack;
+  src: url(../fonts/Raleway/Raleway-Black.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayBlackItalic;
+  src: url(../fonts/Raleway/Raleway-BlackItalic.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayBold;
+  src: url(../fonts/Raleway/Raleway-Bold.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayBoldItalic;
+  src: url(../fonts/Raleway/Raleway-BoldItalic.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayExtraBold;
+  src: url(../fonts/Raleway/Raleway-ExtraBold.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayExtraBoldItalic;
+  src: url(../fonts/Raleway/Raleway-ExtraBoldItalic.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayExtraLight;
+  src: url(../fonts/Raleway/Raleway-ExtraLight.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayExtraLightItalic;
+  src: url(../fonts/Raleway/Raleway-ExtraLightItalic.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayItalic;
+  src: url(../fonts/Raleway/Raleway-Italic.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayLight;
+  src: url(../fonts/Raleway/Raleway-Light.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayLightItalic;
+  src: url(../fonts/Raleway/Raleway-LightItalic.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayMedium;
+  src: url(../fonts/Raleway/Raleway-Medium.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayMediumItalic;
+  src: url(../fonts/Raleway/Raleway-MediumItalic.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayRegular;
+  src: url(../fonts/Raleway/Raleway-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewaySemiBold;
+  src: url(../fonts/Raleway/Raleway-SemiBold.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewaySemiBoldItalic;
+  src: url(../fonts/Raleway/Raleway-SemiBoldItalic.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayThin;
+  src: url(../fonts/Raleway/Raleway-Thin.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: RalewayThinItalic;
+  src: url(../fonts/Raleway/Raleway-ThinItalic.ttf) format("truetype");
+  font-display: swap;
+}
+
+/* Helvetica */
+
+@font-face {
+  font-family: HelveticaBold;
+  src: url(../fonts/Helvetica/Helvetica-Bold-Font.ttf) format("truetype");
+  font-display: swap;
+}
+
+* {
+  font-family: RalewayRegular;
+}
+
+.learn-more-btn {
+  color: #625ec8;
+  border-bottom: 1px solid #625ec8;
+  font-family: RalewaySemiBold;
+}
+.learn-more-container {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  cursor: pointer;
+}
+.learn-more-arr-container {
+  border: 1px solid #625ec8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: fit-content;
+  padding: 0.25rem;
+}
+.learn-more-arr {
+  rotate: 45deg;
+  color: #625ec8;
+  padding: 0.2rem;
+}
+.pointer {
+  cursor: pointer;
+}
+p {
+  line-height: 2rem;
+}
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+}

@@ -1,0 +1,101 @@
+.side-calendar {
+  width: 20rem;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.month-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 10px; */
+  font-family: ClashDisplayMedium;
+  color: #787878;
+}
+
+.day-names {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for 7 days */
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #666; /* Grey color for day names */
+}
+
+.day-name {
+  padding: 5px 0;
+}
+
+/* Grid for calendar days */
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for 7 days */
+  gap: 5px; /* Space between days */
+}
+
+/* Each day in the calendar */
+.calendar-day {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  font-family: ClashDisplayRegular;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Today’s date */
+.today {
+  font-weight: bold;
+  color: #625ec8;
+  border-radius: 50%;
+  border: 1px solid #625ec8;
+}
+
+/* Selected day */
+.selected-day {
+  background-color: #625ec8;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 50%;
+}
+
+/*event Dots */
+.event-cal-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #625ec8;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Hover effect for days */
+.calendar-day:hover {
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+  .side-calendar {
+    width: 100%; /* Full width on small screens */
+    padding: 5px;
+  }
+
+  .month-label {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .calendar-day {
+    padding: 8px; /* Smaller padding */
+  }
+}

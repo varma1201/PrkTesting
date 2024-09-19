@@ -1,0 +1,275 @@
+.career-hero-container {
+  display: flex;
+  max-width: 100%;
+}
+.career-hero-content-container {
+  max-width: 50%;
+  padding: 6rem;
+  background-color: #fafafa;
+}
+.career-hero-image {
+  max-width: 50%;
+}
+.career-title {
+  font-family: RalewaySemibold;
+  font-size: 1.25rem;
+  color: #008e2f;
+  margin-bottom: 2rem;
+}
+.career-hero-heading {
+  font-size: 5rem;
+  color: #625ec8;
+  font-family: ClashDisplayMedium;
+}
+.career-projects-container {
+  padding: 6rem;
+  max-width: 100%;
+}
+.career-project-heading {
+  font-size: 3rem;
+  font-family: ClashDisplayMedium;
+}
+.career-project-map-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 4rem 0rem;
+}
+.career-project-card {
+  width: 30%;
+}
+.career-project-card-num {
+  font-family: ClashDisplayRegular;
+  font-size: 1.5rem;
+}
+.career-project-card-title {
+  font-size: 1.5rem;
+  font-family: ClashDisplayMedium;
+  padding: 1rem 0rem;
+}
+.career-project-enquire-btn {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #625ec8;
+  color: #625ec8;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.career-project-swipe-mobile {
+  display: none;
+}
+.career-hidden {
+  display: none;
+}
+.career-project-talk {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: #f1fcf5;
+  border-radius: 15px;
+  row-gap: 2rem;
+}
+.career-project-talk-btn {
+  background-color: #f1fcf5;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  color: #008e2f;
+  border: 1px solid #008e2f;
+  font-weight: 600;
+}
+
+/* jobs */
+.career-job-container {
+  padding: 6.5rem;
+  max-width: 100%;
+}
+.career-job-main-heading {
+  font-size: 3rem;
+  font-family: ClashDisplayMedium;
+  padding: 1rem 0rem;
+}
+.career-job-map-container {
+  padding: 2rem 0rem;
+}
+.career-job-heading {
+  font-family: ClashDisplayMedium;
+  font-size: 2rem;
+}
+.career-job-heading-active {
+  color: #625ec8;
+}
+.career-job-item-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 2rem 0rem;
+}
+.career-job-item {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: #8da0b1;
+  font-family: ClashDisplayRegular;
+}
+.career-job-sub-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.career-job-sub-contents {
+  color: #222222;
+  font-weight: 400;
+}
+.career-job-upload {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  background-color: #f3f2ff;
+  border-radius: 15px;
+  row-gap: 2rem;
+}
+.career-job-upload-btn {
+  background-color: #f3f2ff;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  color: #625ec8;
+  border: 1px solid #625ec8;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.career-managers-container {
+  padding: 6.5rem;
+  max-width: 100%;
+}
+.career-manager-card {
+  min-width: 30%;
+}
+.career-manager-card-container {
+  display: flex;
+  column-gap: 2rem;
+  overflow-x: scroll;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+  /* For WebKit browsers (Chrome, Safari, etc.) */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .career-hero-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .career-hero-content-container {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  .career-hero-image {
+    min-width: 100%;
+  }
+  .career-hero-heading {
+    font-size: 1.5rem;
+  }
+  .career-projects-container {
+    padding: 1.5rem;
+  }
+  .career-project-heading,
+  .career-job-main-heading {
+    font-size: 2rem;
+  }
+  .career-project-map-container {
+    padding: 2rem 0rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    /* For WebKit browsers (Chrome, Safari, etc.) */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .career-project-card {
+    min-width: 100%;
+  }
+  .career-job-upload,
+  .career-project-talk {
+    padding: 2rem;
+  }
+
+  .career-project-swipe-mobile {
+    display: block;
+    color: grey;
+    font-size: 13px;
+  }
+  .career-job-container {
+    padding: 1.5rem;
+  }
+  .career-job-heading {
+    font-size: 1.5rem;
+  }
+  .career-job-sub-heading {
+    font-size: 1.25rem;
+  }
+  .career-managers-container {
+    padding: 1.5rem;
+  }
+  .career-manager-card {
+    min-width: 80%;
+  }
+  .career-job-upload-btn {
+    margin-top: 0px;
+  }
+  .career-title {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .career-hero-heading {
+    font-size: 2rem;
+    width: 40%;
+  }
+  .career-hero-container {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+  }
+  .career-hero-content-container {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  .career-hero-image {
+    min-width: 100%;
+    height: 60vh;
+  }
+  .career-projects-container,
+  .career-job-container,
+  .career-managers-container {
+    padding: 3rem;
+  }
+  .career-project-heading,
+  .career-job-main-heading {
+    font-size: 2rem;
+  }
+  .career-project-card {
+    width: 45%;
+  }
+  .career-job-heading {
+    font-size: 1.5rem;
+  }
+  .career-job-sub-heading {
+    font-size: 1.25rem;
+  }
+}

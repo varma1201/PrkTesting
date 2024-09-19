@@ -1,0 +1,748 @@
+/* HoverComponent.css */
+.hover-component {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-component img {
+  display: block;
+}
+
+.hide-default-cursor {
+  cursor: none; /* Hide the default cursor */
+}
+/* end*/
+
+.about-story-container {
+  padding: 0rem 7rem;
+  max-width: 100%;
+  /* height: 100vh; */
+  /* min-height: 100vh; */
+  background-color: #fafafa;
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-story-content-container {
+  width: 50%;
+}
+.about-story-section-title,
+.about-gallery-title,
+.FAQ-title {
+  font-family: RalewayBold;
+  padding: 1rem 0rem;
+  font-size: 1.25rem;
+  /* font-weight: 700; */
+  color: #008e2f;
+}
+.about-story-section-heading {
+  font-family: ClashDisplayMedium;
+  font-size: 3rem;
+}
+/* .about-story-image-container {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+} */
+.about-story-image-container {
+  display: flex;
+  width: 50%;
+  column-gap: 1rem;
+}
+.marquee-container {
+  height: 90vh;
+  overflow: hidden;
+  width: 50%;
+  /* min-width: 50%; */
+}
+ul {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+}
+.marquee-up {
+  -webkit-animation: scrollUp 15s linear infinite;
+  animation: scrollUp 15s linear infinite;
+}
+
+.marquee-down {
+  -webkit-animation: scrollDown 15s reverse infinite;
+  animation: scrollDown 15s reverse infinite;
+}
+
+.marquee-up li,
+.marquee-down li {
+  opacity: 1;
+  margin-bottom: 1rem;
+  list-style: none outside;
+  min-width: 100%;
+  padding: none;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-story-grid-item-1 {
+  grid-row: span 2;
+  height: 100%;
+}
+.about-story-grid-item-3 {
+  grid-row: span 2;
+  height: 100%;
+}
+.grid-images {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+/* vision */
+
+.about-vision-container {
+  padding: 7rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+.about-vision-heading {
+  font-family: ClashDisplayMedium;
+  font-size: 2.5rem;
+}
+.about-vision-holder1,
+.about-vision-holder2 {
+  display: flex;
+  width: 100%;
+  column-gap: 3rem;
+  align-items: center;
+}
+.about-vision-imageContainer-1,
+.about-vision-textContainer-1,
+.about-vision-imageContainer-2,
+.about-vision-textContainer-2 {
+  width: 50%;
+}
+
+/* clients */
+
+.about-clients-container {
+  padding: 0rem 6.25rem;
+}
+.about-clients-content {
+  width: 40%;
+}
+.about-clients-heading {
+  font-family: ClashDisplayMedium;
+  font-size: 2.5rem;
+}
+
+/* team */
+
+.about-team-container {
+  padding: 10rem;
+  max-width: 100%;
+}
+.about-team-title,
+.about-officer-title {
+  font-family: RalewayBold;
+  font-size: 1.25rem;
+  color: #008e2f;
+  text-align: center;
+}
+.about-team-heading {
+  font-family: ClashDisplayRegular;
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 6rem;
+}
+.about-team-data-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  column-gap: 1rem;
+}
+
+.about-team-image-card {
+  width: 100%;
+  max-height: 100%;
+  height: 400px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.about-team-details {
+  position: absolute;
+  bottom: 0;
+  background-color: #0006;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+}
+.about-team-name {
+  font-family: ClashDisplayRegular;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 0.5rem;
+}
+.about-team-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 1.75rem;
+}
+.about-team-image-container {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 15px;
+}
+.about-team-image-container > img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-team-image-container > img:hover {
+  transform: scale(1.2);
+}
+
+/* officers */
+.about-officers-container {
+  padding: 0rem 10rem;
+  max-width: 100%;
+}
+.about-officer-heading {
+  font-family: ClashDisplayRegular;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  margin: 1.5rem 0rem;
+}
+.about-officer-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.about-officer-image-container {
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.about-officer-image-container > img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-officer-image-container > img:hover {
+  transform: scale(1.2);
+}
+
+.about-officer-text-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0rem;
+}
+.about-officer-name {
+  font-family: ClashDisplayRegular;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Gallery */
+
+.about-gallery-container {
+  max-width: 100%;
+  padding: 4.75rem;
+}
+.about-gallery-option-container {
+  display: flex;
+  column-gap: 1.5rem;
+  position: relative;
+}
+.about-gallery-options {
+  width: 20%;
+}
+.about-gallery-deatails {
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.about-gallery-image-container {
+  min-width: 30%;
+  /* min-width: 10rem; */
+  height: 15rem;
+}
+.about-gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.about-gallery-option-style {
+  padding: 1rem;
+  font-family: ClashDisplayRegular;
+  color: #a4a4a4;
+}
+.active {
+  color: #625ec8;
+  border-left: 10px solid #625ec8;
+  font-weight: 600;
+}
+.line-seperator {
+  /* margin: 2rem 0rem; */
+  width: 80%;
+  border-top: 2px solid #f5f5f5;
+}
+.desktop-about-video-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+
+  /* margin: rem 0rem; */
+} /* Add this CSS to your About.css file */
+.about-video-seperation {
+  display: flex;
+  margin: 1rem 0rem;
+  align-items: center;
+  column-gap: 1rem;
+}
+.about-video-line {
+  width: 100%;
+  border-top: 2px solid #f5f5f5;
+}
+/* The container holding the sticky element */
+.about-gallery-option-container {
+  position: relative; /* This allows the sticky element to position relative to this container */
+  display: flex;
+  flex-direction: column;
+}
+
+/* The sticky navigation element */
+.about-gallery-options {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0; /* Sticks the element at the top of the page */
+  z-index: 80; /* Ensures it appears above other content */
+  background-color: white; /* Prevents content from overlapping when scrolling */
+  padding: 10px 0; /* Add some padding if needed */
+}
+
+/* Add styles for other elements to handle spacing and layout */
+.about-gallery-deatails {
+  margin-top: 10px; /* Space between sticky header and content */
+}
+
+.desktop-about-video-container {
+  margin-top: 20px; /* Space between sections */
+}
+
+/* FAQs */
+
+.FAQ-container {
+  padding: 6.5rem;
+  max-width: 100%;
+}
+.faq-question-container {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  padding: 2rem 0rem;
+}
+.faq-question {
+  font-size: 1.5rem;
+  font-family: RalewayBold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 600;
+}
+.faq-content {
+  width: 50%;
+}
+.faq-ans {
+  color: #008e2f;
+  font-family: RalewayMedium;
+  padding: 1rem 0rem;
+  width: 60%;
+}
+.about-gallery-option-mob {
+  display: none;
+}
+.about-gal-mob-tab {
+  background-color: #f5f5f5;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  font-family: ClashDisplayMedium;
+  color: #a4a4a4;
+}
+.about-gal-mob-tab-active {
+  background-color: #f3f2ff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  font-family: ClashDisplayMedium;
+  color: #625ec8;
+}
+.about-gallery-options {
+  position: sticky;
+  top: 10%;
+}
+.about-my-modal-content {
+  max-width: 80%;
+  height: 80%;
+  /* height: 20rem; */
+  background-color: #fafafa;
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem;
+  outline: none;
+  border: none;
+}
+.about-my-modal-overlay {
+  position: fixed; /* Ensures the overlay stays in place relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Covers the full width of the viewport */
+  height: 100vh; /* Covers the full height of the viewport */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-gal-container {
+  overflow-y: scroll;
+  min-height: 95%;
+}
+
+@media only screen and (max-width: 767px) {
+  .faq-ans {
+    width: 100%;
+  }
+  .about-story-container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0rem 1.5rem;
+    row-gap: 1rem;
+  }
+  .about-story-image-container {
+    width: 100%;
+  }
+  .about-story-content-container,
+  .about-story-image-container,
+  .about-story-image-grid {
+    width: 100%;
+  }
+  .about-story-section-heading {
+    font-size: 1.5rem;
+  }
+  .about-vision-container {
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  .about-vision-holder1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .about-vision-heading {
+    font-size: 1.5rem;
+  }
+  .about-vision-holder2 {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 1rem;
+  }
+  .about-vision-imageContainer-1,
+  .about-vision-imageContainer-2 {
+    width: 100%;
+  }
+  .about-vision-textContainer-1,
+  .about-vision-textContainer-2 {
+    /* max-width: 100%;
+    min-width: calc("100%-3rem");
+    padding: 1.5rem; */
+    min-width: calc(100% - 3rem);
+  }
+  .about-clients-heading {
+    font-size: 1.25rem;
+  }
+  .about-clients-container {
+    padding: 0rem 1.5rem;
+  }
+  .about-clients-content {
+    width: 100%;
+  }
+  .about-team-data-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    width: 100%;
+  }
+  .about-team-container {
+    padding: 1.5rem;
+  }
+  .about-team-heading {
+    font-family: ClashDisplayMedium;
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 1.5rem 0rem;
+  }
+  .about-team-card {
+    /* width: 100%; */
+    height: auto;
+    border-radius: 1rem;
+    overflow-x: hidden;
+  }
+  /* .about-team-image-container {
+    overflow: hidden;
+    border-radius: 1rem;
+  } */
+
+  .about-officers-container {
+    padding: 2rem 1.5rem;
+  }
+  .about-officer-heading {
+    font-size: 1.75rem;
+  }
+  .about-officer-card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    /* For WebKit browsers (Chrome, Safari, etc.) */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .about-officer-block {
+    min-width: 85%;
+  }
+  /* .about-gallery-options {
+    display: none;
+  } */
+  .about-gallery-container {
+    padding: 1.5rem;
+  }
+  .about-gallery-deatails-mob {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+    grid-auto-flow: dense;
+    gap: 0.75rem;
+    padding: 1.5rem 0rem;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    /* For WebKit browsers (Chrome, Safari, etc.) */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .about-gallery-deatails-mob div:nth-child(odd) {
+    grid-column: 1 / 3; /* Span both columns for full-width images */
+  }
+  .about-gallery-option-container {
+    display: none;
+  }
+  .about-gallery-deatails {
+    display: none;
+  }
+  .FAQ-container {
+    padding: 1.5rem;
+  }
+  .faq-content {
+    width: 100%;
+  }
+  .faq-question {
+    font-size: 1rem;
+  }
+  .about-gallery-option-mob {
+    display: block;
+  }
+  .marquee-container {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .about-story-section-heading {
+    font-size: 2rem;
+  }
+  .about-story-container {
+    padding: 0rem 4.5rem;
+  }
+  .about-vision-container {
+    padding: 4.5rem;
+  }
+  .about-team-heading {
+    font-size: 1.75rem;
+  }
+  .about-clients-heading {
+    font-size: 1.75rem;
+  }
+  .about-clients-container {
+    padding: 0rem 4.5rem;
+  }
+  .about-vision-heading {
+    font-size: 1.5rem;
+  }
+  .about-team-container {
+    padding: 4.5rem;
+  }
+  .about-story-section-heading {
+    font-family: ClashDisplayRegular;
+    font-size: 1.75rem;
+  }
+  .about-team-card {
+    height: 20rem;
+    border-radius: 10px;
+  }
+  .about-officers-container {
+    padding: 0rem 4.5rem;
+  }
+  .about-officer-heading {
+    font-size: 1.75rem;
+  }
+  .FAQ-container {
+    padding: 3rem;
+  }
+  .marquee-container {
+    height: 50vh;
+  }
+  .about-story-container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0rem 1.5rem;
+    row-gap: 1rem;
+  }
+  .about-story-image-container {
+    width: 100%;
+  }
+  .about-story-content-container,
+  .about-story-image-container,
+  .about-story-image-grid {
+    width: 100%;
+  }
+  .about-vision-container {
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  .about-vision-holder1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .about-vision-heading {
+    font-size: 1.5rem;
+  }
+  .about-vision-holder2 {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 1rem;
+  }
+  .about-vision-imageContainer-1,
+  .about-vision-imageContainer-2 {
+    width: 100%;
+  }
+  .about-vision-textContainer-1,
+  .about-vision-textContainer-2 {
+    /* max-width: 100%;
+    min-width: calc("100%-3rem");
+    padding: 1.5rem; */
+    min-width: calc(100% - 3rem);
+  }
+  .about-clients-heading {
+    font-size: 1.25rem;
+  }
+  .about-clients-container {
+    padding: 0rem 1.5rem;
+  }
+  .about-clients-content {
+    width: 100%;
+  }
+  .about-team-data-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  .about-officer-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .about-gallery-option-mob {
+    display: block;
+  }
+  .about-gallery-deatails-mob {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+    grid-auto-flow: dense;
+    gap: 0.75rem;
+    padding: 1rem 0rem;
+  }
+  .about-gallery-deatails-mob div:nth-child(odd) {
+    grid-column: 1 / 3; /* Span both columns for full-width images */
+  }
+  .about-gallery-option-container {
+    display: none;
+  }
+}
+
+@-webkit-keyframes scrollUp {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollUp {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@-webkit-keyframes scrollDown {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+.marquee-container:hover .marquee-up,
+.marquee-container:hover .marquee-down {
+  animation-play-state: paused;
+}

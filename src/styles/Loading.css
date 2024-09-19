@@ -1,0 +1,139 @@
+.loading-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #008e2f;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+/* Positioning dots in a circle using rotate and translate */
+.dot-0 {
+  transform: rotate(0deg) translate(30px);
+}
+.dot-1 {
+  transform: rotate(45deg) translate(30px);
+}
+.dot-2 {
+  transform: rotate(90deg) translate(30px);
+}
+.dot-3 {
+  transform: rotate(135deg) translate(30px);
+}
+.dot-4 {
+  transform: rotate(180deg) translate(30px);
+}
+.dot-5 {
+  transform: rotate(225deg) translate(30px);
+}
+.dot-6 {
+  transform: rotate(270deg) translate(30px);
+}
+.dot-7 {
+  transform: rotate(315deg) translate(30px);
+}
+
+/* Revolving dot should also revolve around the same circle size */
+.revolving-dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #79e09b;
+  border-radius: 50%;
+  animation: revolve 2s linear infinite;
+}
+
+/* Adjust translate to match the static dots */
+@keyframes revolve {
+  0% {
+    transform: rotate(0deg) translate(30px); /* Smaller translate to match the circle */
+  }
+  12.5% {
+    transform: rotate(45deg) translate(30px);
+  }
+  25% {
+    transform: rotate(90deg) translate(30px);
+  }
+  37.5% {
+    transform: rotate(135deg) translate(30px);
+  }
+  50% {
+    transform: rotate(180deg) translate(30px);
+  }
+  62.5% {
+    transform: rotate(225deg) translate(30px);
+  }
+  75% {
+    transform: rotate(270deg) translate(30px);
+  }
+  87.5% {
+    transform: rotate(315deg) translate(30px);
+  }
+  100% {
+    transform: rotate(360deg) translate(30px);
+  }
+}
+
+/* Revolving dot's color change animation */
+@keyframes colorChange {
+  0%,
+  100% {
+    background-color: #008e2f;
+  }
+  12.5% {
+    background-color: #79e09b; /* Change color when touched */
+  }
+  25%,
+  37.5%,
+  50%,
+  62.5%,
+  75%,
+  87.5% {
+    background-color: #008e2f;
+  }
+}
+
+/* Apply color change animation to each static dot */
+.dot-0 {
+  animation: colorChange 2s linear infinite;
+}
+.dot-1 {
+  animation: colorChange 2s linear infinite 0.25s;
+}
+.dot-2 {
+  animation: colorChange 2s linear infinite 0.5s;
+}
+.dot-3 {
+  animation: colorChange 2s linear infinite 0.75s;
+}
+.dot-4 {
+  animation: colorChange 2s linear infinite 1s;
+}
+.dot-5 {
+  animation: colorChange 2s linear infinite 1.25s;
+}
+.dot-6 {
+  animation: colorChange 2s linear infinite 1.5s;
+}
+.dot-7 {
+  animation: colorChange 2s linear infinite 1.75s;
+}
