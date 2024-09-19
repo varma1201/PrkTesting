@@ -35,5 +35,5 @@ export default defineConfig({
     },
     cssCodeSplit: true, // Ensure CSS is split into separate files
   },
-  assetsInclude: ["**/*.JPG"], // Include JPG files in the build
+  assetsInclude: ["**/*.JPG"], // Include JPG files in the
 });
